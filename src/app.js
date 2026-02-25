@@ -11,9 +11,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookie());
 
+
+
 app.use(cors({
-  origin: 'http://localhost:5173',
-  credentials: true,
+  origin: 'https://money-tracker-frontend-w9s6.onrender.com',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
 }));
 
 
